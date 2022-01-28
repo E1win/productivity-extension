@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>New Tab</title>
+</head>
+
+<body>
+    <h1 id="headerText">Stop wasting your time</h1>
+    <!-- Only show the H3 on this container, make it clickable and show the rest of the content when clicked --->
+    <!-- Use and remove active class like with the project a day 'expanding cards' -->
+    <div class='container-usage'>
+        <h3 class='header-usage'>Social media visits</h3>
+        <div class="container-usage-items">
+        </div>
+    </div>
+        
+    <div class="container">
+        <h3>What do you want to get done?</h3>
+        <form class='todo-form'>
+            <input type="text" placeholder="Ex: Solve an algorithm" class='todo-input'>
+        </form>
+        <div class="task-container" id="container_task">
+        </div>
+    </div>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>

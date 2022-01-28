@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+  --box-border-color: rgba(34, 34, 34, 0.2);
+  /* Darkmode border color: rgba(209, 209, 209, 0.2); */
+  /* Lightmode border color: rgba(34, 34, 34, 0.2) */
+  --background-color: rgb(243, 243, 243);
+  /* Darkmode background color: #222 */
+  /* Lightmode background color: rgb(243, 243, 243) */
+  --text-color: #222;
+  /* Darkmode text color: rgb(243, 243, 243) */
+  /* Lightmode text color: #222 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  font-size: 18px;
+  color: var(--text-color);
+  margin: 0 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  body {
+    margin: 0 30px;
+  }
+}
+
+h1 {
+  margin-top: 12vh;
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 50px;
+  font-size: 175%;
+}
+
+h3 {
+  font-size: 125%;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 90%;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 90%;
+}
+
+.btn {
+  background-color: rgba(81, 240, 81, 0.8);
+  /*rgba(81, 240, 81, 0.8)*/
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+
+  font-size: 100%;
+
+  height: auto;
+  width: 3rem;
+  padding: 0 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: width 0.2s;
+}
+
+.btn:hover {
+  width: 5rem;
+}
+
+/*---------------------------------*/
+/* USAGE DATA */
+/*---------------------------------*/
+
+.container-usage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /*height: 20vh;*/
+  width: 100%;
+  /*border: 1px solid rgba(214, 27, 27, 0.719);*/
+  border-top: 1px solid var(--box-border-color);
+  border-bottom: 1px solid var(--box-border-color);
+  position: relative;
+  z-index: 1;
+}
+
+.container-usage h3 {
+  cursor: pointer;
+  user-select: none;
+}
+/*
+.usage-icon {
+  font-size: 150%;
+}
+*/
+
+.container-usage-items {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+/*
+.active {
+  display: none;
+}
+*/
+
+.usage {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  border: 1px solid var(--box-border-color);
+  border-radius: 5px;
+  min-width: 70vw;
+  margin-bottom: 10px;
+}
+
+.usage p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.usage-remove {
+  background-color: rgba(240, 81, 81, 0.8);
+  border-radius: 5px 0 0 5px;
+}
+
+.container-add-usage {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.container-add-usage-form {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  border: 1px solid var(--box-border-color);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.add-usage-form {
+  width: 100%;
+}
+
+.add-usage-input {
+  max-height: 3.5em;
+  width: 100%;
+  border: 1px solid var(--box-border-color);
+  border-radius: 5px;
+  padding: 1rem;
+  outline: none;
+  background-color: var(--background-color);
+}
+
+.add-usage {
+  font-size: 130%;
+}
+
+/*---------------------------------*/
+/* TO DO */
+/*---------------------------------*/
+
+.todo-input {
+  border: 3px solid var(--box-border-color);
+  border-radius: 4px;
+  min-width: 50vw;
+  min-height: 3em;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: var(--background-color);
+}
+
+.task-container {
+  max-height: 20vh;
+  overflow-y: auto;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  min-width: 70vw;
+  margin-top: 10px;
+
+  border: 1px solid var(--box-border-color);
+  border-radius: 5px;
+}
+
+.task:hover {
+  border: 1px solid rgba(34, 34, 34, 0.3);
+  border-radius: 5px;
+}
+
+.task-text {
+  padding: 0 0.5rem;
+  cursor: inherit;
+}
+
+.task {
+  cursor: pointer;
+}
+
+/***********************************/
+/*** HIDDEN CLASS  */
+
+.hidden {
+  display: none;
+  /*background-color: rgb(255, 184, 184);*/
+}

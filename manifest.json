@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Productivity Manager",
+    "version": "1.0",
+    "description": "Become aware of how much time you've wasted on the internet.",
+    "chrome_url_overrides":{
+        "newtab" : "index.html"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "webRequest",
+        "<all_urls>",
+        "webRequestBlocking"
+    ]
+}
